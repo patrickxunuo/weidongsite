@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Route} from "react-router-dom";
 import PageFrame from "./components/PageFrame/PageFrame";
 
 function App() {
-
+let abbb = "1"
   return (
     <div className="App">
       <Router>
