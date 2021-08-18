@@ -1,0 +1,22 @@
+.contact-box-container{
+  background: #e9eaeb;
+  width: 360px;
+  padding: 10px;
+  text-align: start;
+
+  .contact-box-line{
+    height:1px;
+    width: 98%;
+    background: blue;
+  }
+  .contact-box-text{
+    margin: 10px;
+  }
+  .contact-box-media{
+    display: flex;
+
+    div{
+      margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .page-body {
+    width: 1260px;
+    margin: 30px;
+  }
+
+  .page-lg-img {
+    width: 100%;
+    height: auto;
+  }
+}
+

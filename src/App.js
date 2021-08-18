@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import {BrowserRouter as Router, Route} from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
+import PageFrame from "./components/PageFrame/PageFrame";
 
 function App() {
 
@@ -15,7 +15,10 @@ function App() {
           <Home/>
         </Route>
         <Route path="/aboutus">
-          <AboutUs/>
+          <PageFrame/>
+        </Route>
+        <Route path="/products">
+          <PageFrame/>
         </Route>
         <Footer/>
       </Router>

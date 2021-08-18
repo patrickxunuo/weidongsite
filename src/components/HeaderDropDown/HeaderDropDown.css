@@ -1,0 +1,17 @@
+.header-drop-ul {
+  position: absolute;
+  display: none !important;
+  top: 80px;
+  left: 0;
+  padding: 0;
+  background: rgba(41, 129, 222, 0.8);
+  flex-direction: column !important;
+}
+.header-drop-ul:hover {
+  display: flex !important;
+}
+.header-drop-ul li {
+  width: 300px;
+}
+
+/*# sourceMappingURL=HeaderDropDown.css.map */
