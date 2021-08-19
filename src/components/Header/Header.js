@@ -1,8 +1,12 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import {headerData} from "../../data";
 import './Header.css'
+import HeaderDropDown from "../HeaderDropDown/HeaderDropDown";
 
 const Header =  () => {
+
+
   return(
     <header className="header-container">
       <div className="header-content">
@@ -11,13 +15,17 @@ const Header =  () => {
         </div>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/aboutus">About Us</Link></li>
-            <li>Product</li>
-            <li>News</li>
-            <li>Industry Knowledge</li>
-            <li>Contact Us</li>
-            <li>Feedback</li>
+            {
+              headerData.map(data=>
+                <li>
+                  <Link to={`/${data.to}`}>{data.name}</Link>
+                  {
+                    data.dropDown &&
+                    <HeaderDropDown dropDown={data.dropDown}/>
+                  }
+                </li>
+              )
+            }
           </ul>
         </nav>
       </div>

@@ -1,0 +1,22 @@
+.contact-box-container {
+  background: #e9eaeb;
+  width: 360px;
+  padding: 10px;
+  text-align: start;
+}
+.contact-box-container .contact-box-line {
+  height: 1px;
+  width: 98%;
+  background: blue;
+}
+.contact-box-container .contact-box-text {
+  margin: 10px;
+}
+.contact-box-container .contact-box-media {
+  display: flex;
+}
+.contact-box-container .contact-box-media div {
+  margin: 10px;
+}
+
+/*# sourceMappingURL=ContactUsBox.css.map */

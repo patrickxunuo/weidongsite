@@ -1,0 +1,39 @@
+.nav-box-container{
+  background: #e9eaeb;
+  width: 360px;
+  padding: 10px;
+  margin-bottom: 50px;
+
+  .nav-expand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+      height: 30px;
+      cursor: pointer;
+    }
+  }
+  .nav-box-line{
+    height:1px;
+    width: 98%;
+    background: blue;
+  }
+  .nav-box-text{
+    margin: 10px;
+  }
+  .nav-box-list{
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+        border-bottom: 1px white solid;
+      }
+    }
+  }
+  .nav-sub-box-text{
+    border: none !important;
+    margin: 10px;
+    font-size: 14px;
+  }
+}

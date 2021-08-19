@@ -1,9 +1,10 @@
 import React from 'react';
+import PageFrame from "../components/PageFrame/PageFrame";
 
 const AboutUs = () => {
   return (
-    <div style={{height: '1000px'}}>
-      this is about us
+    <div>
+      <PageFrame />
     </div>
   )
 }
