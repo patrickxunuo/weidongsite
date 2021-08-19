@@ -2,6 +2,7 @@ import React from "react";
 import ContactUsBox from "../ContactUsBox/ContactUsBox";
 import './PageFrame.css'
 import NavBox from "../NavBox/NavBox";
+import NewsList from "../NewsList/NewsList";
 
 const PageFrame = () => {
 
@@ -13,6 +14,7 @@ const PageFrame = () => {
         <div className="page-body-left">
           <NavBox />
           <ContactUsBox/>
+          <NewsList/>
         </div>
         <div className="page-body-right">
 
