@@ -1,0 +1,33 @@
+.home-hotproduct{
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+}
+.home-hotproduct-wrap{
+  width: 1260px;
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+.hotproduct-container{
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+  img{
+    width: 100%;
+  }
+.hotproduct-name{
+  font-weight: bold;
+}
+  .hotproduct-img{
+    height: 100px;
+    padding: 0 20px;
+  }
+  .hotproduct-button{
+    margin: 10px;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    cursor: pointer;
+  }
+}

@@ -9,12 +9,15 @@ import NewsList from "../NewsList/NewsList";
 import AboutUs from "../../pages/AboutUs";
 import Products from "../../pages/Products/Products";
 import ProductList from "../../pages/ProductList/ProductList";
+import ProductDetail from "../ProductDetail/ProductDetail";
 
 const PageFrame = () => {
   const {pathname} = useParams()
   const location = useLocation()
   const locations = location.pathname.split('/')
   const cate = locations[locations.length - 1]
+
+  console.log(pathname)
 
   return (
     <div className="page-container">
@@ -28,8 +31,19 @@ const PageFrame = () => {
         <div className="page-body-right">
           <div className="page-body-right-title">
             <Link to="/"><span> Home </span></Link>
-            <span> > </span>
-            <Link to={pathname}><span> {cate} </span></Link>
+            {
+              locations.map(location => {
+                  if (location === '')
+                    return <></>
+                  else return (
+                    <>
+                      <span> > </span>
+                      <span> {location} </span>
+                    </>
+                  )
+                }
+              )
+            }
           </div>
           <div className="page-small-title">{pathname.toUpperCase()}</div>
           {locations.length === 2 &&
@@ -57,13 +71,19 @@ const PageFrame = () => {
           </>
           }
           {
-            locations.length===3 &&
-              <>
-                {
-                  pathname==="products"&&
-                    <ProductList cate={cate}/>
-                }
-              </>
+            locations.length === 3 &&
+            <>
+              {
+                pathname === "products" &&
+                <ProductList cate={cate}/>
+              }
+            </>
+          }
+          {
+            locations.length === 4 &&
+            <>
+              <ProductDetail/>
+            </>
           }
         </div>
       </div>

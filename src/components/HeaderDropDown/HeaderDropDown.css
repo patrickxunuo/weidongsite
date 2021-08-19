@@ -6,6 +6,7 @@
   padding: 0;
   background: rgba(41, 129, 222, 0.8);
   flex-direction: column !important;
+  z-index: 99;
 }
 .header-drop-ul:hover {
   display: flex !important;

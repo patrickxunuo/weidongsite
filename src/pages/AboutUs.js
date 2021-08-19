@@ -48,7 +48,8 @@ Special customized systems for all kinds of printing solutions.
 
 
 
-Our main market is in Europe and USA with a strong distributor network. We sincerely hope you can join us and enjoy our excellent quality, continuous innovation and best service.
+Our main market is in Europe and USA with a strong distributor network. We sincerely hope you can join us and enjoy our excellent quality, 
+continuous innovation and best service.
 `}
       </pre>
     </div>
