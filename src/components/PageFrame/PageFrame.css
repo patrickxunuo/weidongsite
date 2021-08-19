@@ -5,7 +5,51 @@
 }
 .page-container .page-body {
   width: 1260px;
+  display: flex;
+}
+.page-container .page-body span {
+  color: black;
+}
+.page-container .page-body-left, .page-container .page-body-right {
   margin: 30px;
+}
+.page-container .page-body .page-body-right {
+  width: 100%;
+}
+.page-container .page-body .page-body-right .page-body-right-title {
+  border-bottom: lightgray solid 1px;
+  width: 100%;
+}
+.page-container .page-body .page-body-right .page-small-title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+.page-container .page-body form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-container .page-body form div {
+  margin: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+.page-container .page-body form div input, .page-container .page-body form div textarea {
+  width: 300px;
+}
+.page-container .page-body form div input[type=submit] {
+  background: lightblue;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+.page-container .page-body form div textarea {
+  height: 150px;
+}
+.page-container .page-body form label {
+  display: inline-block;
+  width: 100px;
 }
 .page-container .page-lg-img {
   width: 100%;

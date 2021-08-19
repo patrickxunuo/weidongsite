@@ -17,12 +17,12 @@ const NavBox = () => {
       <div className="nav-box-list">
         <ul>
           {
-            thisPageData[0].nav.map(navItem =>
+            thisPageData[0].nav.map((navItem,index) =>
               typeof (navItem) === 'string' ?
-                <li>
+                <li key={index}>
                   <div className="nav-box-text">{navItem}</div>
                 </li>
-                : <NavBoxExpand navItem={navItem}/>
+                : <NavBoxExpand key={index} navItem={navItem}/>
             )
           }
         </ul>

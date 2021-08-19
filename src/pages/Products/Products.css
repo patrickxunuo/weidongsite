@@ -1,0 +1,14 @@
+.product-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.product-wrap .product-img {
+  height: 250px;
+  width: 250px;
+}
+.product-wrap .product-title {
+  color: black;
+}
+
+/*# sourceMappingURL=Products.css.map */

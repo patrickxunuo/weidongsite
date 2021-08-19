@@ -16,8 +16,8 @@ const Header =  () => {
         <nav>
           <ul>
             {
-              headerData.map(data=>
-                <li>
+              headerData.map((data,index)=>
+                <li key={index}>
                   <Link to={`/${data.to}`}>{data.name}</Link>
                   {
                     data.dropDown &&

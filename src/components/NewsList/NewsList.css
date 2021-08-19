@@ -1,0 +1,32 @@
+.newslist-box-container {
+  background: #e9eaeb;
+  width: 900px;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+.newslist-box-container .newslist-box-text {
+  margin: 10px;
+}
+.newslist-box-container .newslist-box-list ul {
+  list-style: none;
+  padding: 5px 0px;
+}
+.newslist-box-container .newslist-box-list ul .news-and-time ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.newslist-box-container .newslist-box-list ul .news-and-time ul .newslist-box-text-left {
+  padding: 0;
+  text-align: left;
+}
+.newslist-box-container .newslist-box-list ul .news-and-time ul .newslist-box-text-time {
+  text-align: right;
+}
+.newslist-box-container .newslist-box-list .afterlist-line {
+  border-bottom: grey;
+  border-bottom-style: dashed;
+  border-bottom-width: 1px;
+}
+
+/*# sourceMappingURL=NewsList.css.map */

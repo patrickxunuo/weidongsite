@@ -27,11 +27,14 @@ export const headerData = [
   },
   {
     name:"Industry Knowledge",
+    to:'info',
   },
   {
-    name:"Contact Us"
+    name:"Contact Us",
+    to:"contact-us"
   },
   {
-    name:"Feedback"
+    name:"Feedback",
+    to:'feedback',
   },
 ]

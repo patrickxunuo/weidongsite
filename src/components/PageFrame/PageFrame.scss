@@ -2,9 +2,61 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   .page-body {
     width: 1260px;
-    margin: 30px;
+    display: flex;
+
+    span {
+      color: black;
+    }
+
+    &-left, &-right {
+      margin: 30px;
+    }
+
+    .page-body-right {
+      width: 100%;
+
+      .page-body-right-title {
+        border-bottom: lightgray solid 1px;
+        width: 100%;
+      }
+      .page-small-title{
+        font-weight: bold;
+        margin: 10px 0;
+      }
+    }
+
+    form{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      div{
+        margin: 10px;
+        display: flex;
+        align-items: flex-start;
+
+        input, textarea{
+          width: 300px;
+        }
+        input[type="submit"]{
+          background: lightblue;
+          border: none;
+          padding: 1em;
+          cursor: pointer;
+        }
+        textarea{
+          height:150px;
+        }
+      }
+      label{
+        display: inline-block;
+        width: 100px;
+      }
+    }
   }
 
   .page-lg-img {

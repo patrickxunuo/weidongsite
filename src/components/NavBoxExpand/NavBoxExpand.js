@@ -12,8 +12,8 @@ const NavBoxExpand = ({navItem}) => {
         />
       </div>
       <ul style={isExpand?{height:'auto',display:'block'}:{height:0, display:'none'}}>{
-        navItem.subTitle.map(subTitle =>
-          <li className="nav-sub-box-text">{subTitle}</li>
+        navItem.subTitle.map((subTitle,index) =>
+          <li key={index} className="nav-sub-box-text">{subTitle}</li>
         )
       }
       </ul>

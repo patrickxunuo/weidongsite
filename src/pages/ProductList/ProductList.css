@@ -1,0 +1,32 @@
+.product-list {
+  padding: 0 !important;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 20px 10px;
+}
+.product-item .product-name {
+  color: blue;
+  font-weight: bold;
+}
+.product-item .product-des {
+  color: grey;
+  font-size: 14px;
+}
+.product-item div {
+  margin: 5px;
+}
+.product-item div button {
+  border: none;
+  background: lightblue;
+  color: black;
+  padding: 1em;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=ProductList.css.map */

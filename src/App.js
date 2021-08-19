@@ -14,10 +14,7 @@ function App() {
         <Route path="/" exact>
           <Home/>
         </Route>
-        <Route path="/aboutus">
-          <PageFrame/>
-        </Route>
-        <Route path="/products">
+        <Route path="/:pathname">
           <PageFrame/>
         </Route>
         <Footer/>

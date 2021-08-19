@@ -1,0 +1,42 @@
+.newslist-box-container{
+  background: #e9eaeb;
+  width: 900px;
+  padding: 10px;
+  margin-bottom: 50px;
+
+  .newslist-box-text{
+    margin: 10px;
+  }
+  .newslist-box-list{
+    ul{
+      list-style: none;
+      padding: 5px 0px;
+      .news-and-time{
+        ul{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .newslist-box-text-left{
+            padding: 0;
+            text-align: left;
+          }
+
+          .newslist-box-text-time{
+            text-align: right;
+
+          }
+
+        }
+
+
+      }
+    }
+
+    .afterlist-line{
+      border-bottom: grey;
+      border-bottom-style: dashed;
+      border-bottom-width: 1px;
+    }
+  }
+}
