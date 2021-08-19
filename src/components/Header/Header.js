@@ -4,10 +4,8 @@ import {headerData} from "../../data";
 import './Header.css'
 import HeaderDropDown from "../HeaderDropDown/HeaderDropDown";
 
-const Header =  () => {
-
-
-  return(
+const Header = () => {
+  return (
     <header className="header-container">
       <div className="header-content">
         <div>
@@ -16,9 +14,11 @@ const Header =  () => {
         <nav>
           <ul>
             {
-              headerData.map((data,index)=>
+              headerData.map((data, index) =>
                 <li key={index}>
-                  <Link to={`/${data.to}`}>{data.name}</Link>
+                  <Link to={`/${data.to}`}>
+                    {data.name}
+                  </Link>
                   {
                     data.dropDown &&
                     <HeaderDropDown dropDown={data.dropDown}/>
