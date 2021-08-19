@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom'
 import {headerData} from "../../data";
 import './Header.css'
 import HeaderDropDown from "../HeaderDropDown/HeaderDropDown";
+import imgs from '../../Image/logo.png'
+
 
 const Header =  () => {
 
@@ -11,7 +13,7 @@ const Header =  () => {
     <header className="header-container">
       <div className="header-content">
         <div>
-          <img src="https://www.apm-print.com/uploads/201714219/logo225852.png" alt=""/>
+          <img src={ imgs } alt=""/>
         </div>
         <nav>
           <ul>

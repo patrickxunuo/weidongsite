@@ -1,0 +1,42 @@
+.productdetail-list{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+
+  .productdetail-right{
+    &-description{
+      font-size: 14px;
+      color: #797777;
+    }
+    button{
+      color: white;
+      padding: 0;
+      transition-duration: 0.4s;
+      border-radius: 4px;
+      text-align: center;
+      width: 150px;
+      height: 50px;
+      font-size: 20px;
+      &:hover{
+        background-color: #61dafb;
+      }
+    }
+    .chat-now{
+      background-color: #e41e26;
+    }
+    .send-inquiry{
+      background-color: #2981de;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      li{
+        padding: 5px;
+        width: 300px;
+      }
+    }
+  }
+}
+
