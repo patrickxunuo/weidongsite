@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import {headerData} from "../../data";
 import './Header.css'
 import HeaderDropDown from "../HeaderDropDown/HeaderDropDown";
-import imgs from '../../Image/logo.png'
+import imgs from '../../assets/logo.png'
 
 
 const Header =  () => {
