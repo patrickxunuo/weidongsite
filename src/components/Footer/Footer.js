@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.css'
+import imgs from '../../Image/logoS.png'
 
 const Footer = () => {
 
@@ -57,7 +58,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <img src="https://www.apm-print.com/uploads/201714219/logo225852.png" alt=""/>
+            <img src={ imgs } alt=""/>
           </div>
         </div>
       </div>
