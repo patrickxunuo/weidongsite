@@ -1,0 +1,13 @@
+.product-wrap{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .product-img{
+    height: 250px;
+    width: 250px;
+  }
+  .product-title{
+    color: black;
+  }
+}

@@ -3,6 +3,7 @@ import React, {useState} from "react";
 const NavBoxExpand = ({navItem}) => {
   const [isExpand, setIsExpand] = useState(false)
 
+  console.log(navItem)
   return (
     <li>
       <div className="nav-expand">
@@ -12,8 +13,8 @@ const NavBoxExpand = ({navItem}) => {
         />
       </div>
       <ul style={isExpand?{height:'auto',display:'block'}:{height:0, display:'none'}}>{
-        navItem.subTitle.map(subTitle =>
-          <li className="nav-sub-box-text">{subTitle}</li>
+        navItem?.subTitle?.map((subTitle,index) =>
+          <li key={index} className="nav-sub-box-text">{subTitle}</li>
         )
       }
       </ul>

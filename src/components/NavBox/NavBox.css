@@ -20,6 +20,7 @@
 }
 .nav-box-container .nav-box-text {
   margin: 10px;
+  color: black !important;
 }
 .nav-box-container .nav-box-list ul {
   list-style: none;

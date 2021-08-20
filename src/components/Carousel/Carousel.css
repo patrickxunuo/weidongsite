@@ -1,0 +1,28 @@
+.car-container {
+  width: 100%;
+  position: relative;
+}
+.car-container img {
+  width: 100%;
+}
+.car-container .car-control {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.car-container .car-control .car-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: grey;
+  margin: 20px;
+  cursor: pointer;
+}
+.car-container .car-control .car-dot:hover {
+  background: black;
+}
+
+/*# sourceMappingURL=Carousel.css.map */

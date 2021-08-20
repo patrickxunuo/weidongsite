@@ -6,8 +6,8 @@ const HeaderDropDown = ({dropDown}) => {
   return (
     <ul className="header-drop-ul">
       {
-        dropDown.map(item =>
-          <li>{item}</li>
+        dropDown.map((item,index) =>
+          <li key={index}>{item}</li>
         )
       }
     </ul>

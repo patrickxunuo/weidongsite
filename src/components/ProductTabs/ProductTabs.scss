@@ -1,0 +1,21 @@
+
+.product-tab {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  background: lightgray;
+  justify-content: flex-start;
+  padding: 0;
+  border-bottom: 2px blue solid;
+
+  li {
+    padding: 1em;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+  }
+  .fixed-tab{
+    background:#2981de;
+  }
+}
+

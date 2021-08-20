@@ -1,0 +1,26 @@
+.home-showcase {
+  display: flex;
+  justify-content: center;
+}
+
+.showcase-container {
+  width: 400px;
+  background-color: #f0f0f0;
+  text-align: center;
+  margin: 50px;
+}
+.showcase-container img {
+  width: 100%;
+}
+.showcase-container .showcase-img-caption {
+  height: 100px;
+  padding: 0 20px;
+}
+.showcase-container .showcase-img-button {
+  margin: 10px;
+  padding: 0.5em 1em;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=ShowCase.css.map */

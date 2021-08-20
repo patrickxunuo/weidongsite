@@ -1,0 +1,39 @@
+.productdetail-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.productdetail-list .productdetail-right-description {
+  font-size: 14px;
+  color: #797777;
+}
+.productdetail-list .productdetail-right button {
+  color: white;
+  padding: 0;
+  transition-duration: 0.4s;
+  border-radius: 4px;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+}
+.productdetail-list .productdetail-right button:hover {
+  background-color: #61dafb;
+}
+.productdetail-list .productdetail-right .chat-now {
+  background-color: #e41e26;
+}
+.productdetail-list .productdetail-right .send-inquiry {
+  background-color: #2981de;
+}
+.productdetail-list .productdetail-right ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.productdetail-list .productdetail-right ul li {
+  padding: 5px;
+  width: 300px;
+}
+
+/*# sourceMappingURL=ProductDetail.css.map */
