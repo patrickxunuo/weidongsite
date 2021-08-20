@@ -13,9 +13,8 @@ const Carousel = () => {
   }, [])
 
   useEffect(() => {
-    console.log(car)
     if (car === 3) {
-      setTimeout(()=>setCar(0),1000)
+      setTimeout(()=>setCar(0),2000)
     }
   }, [car]);
 
