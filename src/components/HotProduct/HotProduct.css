@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  padding: 20px;
 }
 
 .home-hotproduct-wrap {
@@ -15,7 +16,7 @@
 .hotproduct-container {
   width: 300px;
   text-align: center;
-  margin: 5px;
+  margin: 20px 5px;
 }
 .hotproduct-container img {
   width: 100%;
@@ -32,6 +33,10 @@
   padding: 0.5em 1em;
   border: 1px solid black;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.hotproduct-container .hotproduct-button:hover {
+  background: #2981de;
 }
 
 /*# sourceMappingURL=HotProduct.css.map */
