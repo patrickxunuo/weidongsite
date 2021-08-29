@@ -1,16 +1,14 @@
 import React from 'react';
-import ProductDetail from "../components/ProductDetail/ProductDetail";
 import ShowCase from "../components/ShowCase/ShowCase";
-import Carousel from "../components/Carousel/Carousel";
 import {showcaseData} from "../data";
 import HotProduct from "../components/HotProduct/HotProduct";
 import HomeNews from "../components/HomeNews/HomeNews";
+import CarouselWidget from "../components/Carousel/Carousel";
 
 const Home = () => {
   return (
     <div>
-      <Carousel/>
-      {/*<ProductDetail/>*/}
+      <CarouselWidget/>
       <div className="home-showcase">
         {
           showcaseData.map((data,index)=>

@@ -1,24 +1,30 @@
-.home-news{
+.home-news {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .home-news-wrap{
+  padding: 20px;
+
+  .home-news-wrap {
     width: 1260px;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: center;
   }
 }
-.home-news-container{
-  width: 500px;
+
+.home-news-container {
+  width: 600px;
   display: flex;
   margin: 10px;
 
-  h4{
-    margin: 0;
+  div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  img{
-    height: 80px;
-    margin: 10px;
+
+  img {
+    height: 90px;
+    margin-right: 10px;
   }
 }

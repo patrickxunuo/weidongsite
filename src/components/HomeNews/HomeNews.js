@@ -8,9 +8,9 @@ const HomeNews = () => {
       <div><img src="https://www.apm-print.com/uploads/202114219/n202107051717223437624.jpg" alt=""/></div>
       <div>
         <div>
-          <h4>
+          <h5>
             Customer Is Very Satisfied With Their Long Ro...
-          </h4>
+          </h5>
         </div>
         <div>
           <p>
