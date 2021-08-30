@@ -15,7 +15,7 @@ const HomeNews = () => {
         <div>
           <p>
             Customer is very satisfied with their long round bottle screen printing test, they ordered new auto
-            servo screen printin
+            servo screen printing
           </p>
         </div>
       </div>

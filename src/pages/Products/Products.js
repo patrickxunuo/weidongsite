@@ -1,21 +1,23 @@
 import React from 'react';
 import {productsCateData} from "../../data";
 import './Products.css'
-import {Link, useLocation} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const Products = () => {
 
 
-  return(
+  return (
     <div className="product-wrap">
       {
-        productsCateData.map(data=>
-          <div>
-            <Link to="/products/auto-screen-printer">
+        productsCateData.map((data,index) =>
+          <Link to="/products/auto-screen-printer" key={index}>
+            <div className="product-item-wrap">
               <img className="product-img" src={data.img} alt=""/>
-              <h3 className="product-title">{data.name}</h3>
-            </Link>
-          </div>
+              <div className="product-title">
+                <span>{data.name}</span>
+              </div>
+            </div>
+          </Link>
         )
       }
     </div>

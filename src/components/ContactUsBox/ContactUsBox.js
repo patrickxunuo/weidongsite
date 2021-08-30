@@ -20,15 +20,15 @@ const ContactUsBox = () => {
         </div>
         <div>
           <a href="https://www.apm-print.com/contact-us" rel="nofollow"><img className="float_l"
-                                                                             src="https://www.apm-print.com/images/m137/index_04.gif"/></a>
+                                                                             src="https://www.apm-print.com/images/m137/index_05.gif"/></a>
         </div>
         <div>
           <a href="https://www.apm-print.com/contact-us" rel="nofollow"><img className="float_l"
-                                                                             src="https://www.apm-print.com/images/m137/index_04.gif"/></a>
+                                                                             src="https://www.apm-print.com/images/m137/index_06.gif"/></a>
         </div>
         <div>
           <a href="https://www.apm-print.com/contact-us" rel="nofollow"><img className="float_l"
-                                                                             src="https://www.apm-print.com/images/m137/index_04.gif"/></a>
+                                                                             src="https://www.apm-print.com/images/m137/index_07.gif"/></a>
         </div>
       </div>
     </div>
