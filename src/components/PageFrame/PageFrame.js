@@ -17,8 +17,6 @@ const PageFrame = () => {
   const locations = location.pathname.split('/')
   const cate = locations[locations.length - 1]
 
-  console.log(pathname)
-
   return (
     <div className="page-container">
       <img className="page-lg-img"
@@ -32,15 +30,14 @@ const PageFrame = () => {
           <div className="page-body-right-title">
             <Link to="/"><span> Home </span></Link>
             {
-              locations.map(location => {
-                  if (location === '')
-                    return <></>
-                  else return (
-                    <>
-                      <span> > </span>
-                      <span> {location} </span>
-                    </>
-                  )
+              locations.map((location, index) => {
+                  if (location !== '')
+                    return (
+                      <React.Fragment key={index}>
+                        <span> > </span>
+                        <span> {location} </span>
+                      </React.Fragment>
+                    )
                 }
               )
             }
@@ -49,7 +46,7 @@ const PageFrame = () => {
           {locations.length === 2 &&
           <>
             {
-              pathname === "aboutus" &&
+              pathname === "about-us" &&
               <AboutUs/>
             }
             {

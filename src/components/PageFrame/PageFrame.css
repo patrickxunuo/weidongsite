@@ -43,6 +43,11 @@
   border: none;
   padding: 1em;
   cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.page-container .page-body form div input[type=submit]:hover {
+  background-color: blue;
+  color: white;
 }
 .page-container .page-body form div textarea {
   height: 150px;

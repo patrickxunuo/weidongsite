@@ -1,41 +1,86 @@
 export const productsCateData = [
   {
     name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg",
+    products: [],
+    subCate: [{
+      name: "Shuttle Screen Printer",
+      products: [],
+    }, {
+      name: "CNC Screen Printer",
+      products: [],
+    }]
   },
   {
-    name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    name: "Auto Screen Printer",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201553556965495.jpg",
+    products: [],
   },
   {
-    name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    name: "Hot Stamping Machines",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201557530098317.jpg",
+    products: [],
   },
   {
-    name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    name: "Automatic Screen Printing and Hot Stamping Machine",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201558285728873.jpg",
+    products: [],
   },
   {
-    name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    name: "Semi Auto Screen Printer",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201558547761104.jpg",
+    products: [],
   },
   {
-    name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    name: "Semi Auto Hot Stamping Machine",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201600514169508.jpg",
+    products: [],
   },
   {
-    name: "Glass Bottle Screen Printer",
-    img: "https://www.apm-print.com/uploads/201714219/p201707201553010862089.jpg"
+    name: "Pad Printer",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201601158388309.jpg",
+    products: [],
   },
+  {
+    name: "Accessories",
+    img: "https://www.apm-print.com/uploads/201714219/p201707201602074325747.jpg",
+    subCate: [{
+      name: "UV Curing Machine",
+      products: [],
+    }, {
+      name: "Flame Treatment Machine",
+    },
+      {
+        name: "Drying Oven",
+        products: [],
+      },
+      {
+        name: "Exposing Machine",
+        products: [],
+      },
+      {
+        name: "Mesh Stretching Machine",
+        products: [],
+      },
+      {
+        name: "Cleaning Unit",
+        products: [],
+      },
+      {
+        name: "Uv Painting Line",
+        products: [],
+      }],
+  }
 ]
 
 export const productsData = [
-  {cate:'Auto Screen Printer', products:[
+  {
+    cate: 'Auto Screen Printer', products: [
       {
         id: '1',
         name: 'Multicolor Bottle Automatic Screen Printer With UV System',
         description: 'The APM-S102 is designed for multi-color decoration of cylindrical/ova/square/plastic glass bottles,cups,hard tubes at high production speeds. It is suitable for glass and plastic containers printing with UV ink. Need registration point for multi-color cylindrical bottle printing.',
-        img:'https://www.apm-print.com/uploads/202114219/small/cnc106-multi-color-automatic-servo-screen54471259068.jpg',
+        img: 'https://www.apm-print.com/uploads/202114219/small/cnc106-multi-color-automatic-servo-screen54471259068.jpg',
         feature: '1.Printing size: Round bottle: φ20-φ100mm length:30-180mm　\n' +
           '\n' +
           'Square bottle:width:20-100mm, length:30-180mm　\n' +
@@ -157,5 +202,6 @@ export const productsData = [
         spec: 'Hot Tags: automatic servo glass bottle screen printer, China, manufacturer, supplier, factory, prices, for sale\n',
         related: 'Hot Tags: automatic servo glass bottle screen printer, China, manufacturer, supplier, factory, prices, for sale\n',
       },
-    ]}
+    ]
+  }
 ]

@@ -1,34 +1,40 @@
 import React from "react";
 import './NavBox.css'
 import {Link, useLocation} from "react-router-dom";
-import {pageData} from "../../data/";
 import NavBoxExpand from "../NavBoxExpand/NavBoxExpand";
+import {productsCateData} from "../../data/"
+
 
 const NavBox = () => {
   const {pathname} = useLocation()
-
-  const thisPageData = pageData.filter(data => pathname.includes(data.page))[0]
-
-  const {type, title} = thisPageData
+  const pageName = pathname.split('/')[1]
 
   return (
     <div className="nav-box-container">
-      <h4 className="nav-box-text">{title}</h4>
+      <h4 className="nav-box-text">{pageName.replace("-"," ")}</h4>
       <div className="nav-box-line"/>
       <div className="nav-box-list">
-        <ul>
-          {
-            thisPageData?.nav.map((navItem,index) =>
-             !navItem.hasOwnProperty("subTitle") ?
-                <li key={index}>
-                  <Link to={navItem.to}>
-                    <div className="nav-box-text">{navItem.title}</div>
-                  </Link>
-                </li>
-                : <NavBoxExpand key={index} navItem={navItem}/>
-            )
-          }
-        </ul>
+        {
+          (pageName === "about-us" || pageName==="contact-us" ||pageName==="feedback") ?
+          <ul>
+            <li><Link to="/about-us"><div className="nav-box-text">About Us</div></Link></li>
+            <li><Link to="/contact-us"><div className="nav-box-text">Contact Us</div></Link></li>
+            <li><Link to="/feedback"><div className="nav-box-text">Feedback</div></Link></li>
+          </ul>:
+            <ul>
+              {
+                productsCateData.map((cate, index) =>
+                  !cate.subCate ?
+                    <li key={index}>
+                      <Link to={`/products/${cate.name.toLowerCase().replace(" ","-")}`}>
+                        <div className="nav-box-text">{cate.name}</div>
+                      </Link>
+                    </li>
+                    : <NavBoxExpand key={index} cateName={cate.name} subCate={cate.subCate}/>
+                )
+              }
+            </ul>
+        }
       </div>
     </div>
   )
