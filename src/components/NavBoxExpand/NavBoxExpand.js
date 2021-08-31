@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faChevronRight} from '@fortawesome/free-solid-svg-icons'
 import './NavBoxExpand.css'
+import {Link} from "react-router-dom";
 
 const NavBoxExpand = ({subCate, cateName}) => {
   const [isExpand, setIsExpand] = useState(false)
@@ -9,7 +10,9 @@ const NavBoxExpand = ({subCate, cateName}) => {
   return (
     <li>
       <div className="nav-expand">
+        <Link to={`/products/${cateName.toLowerCase().replaceAll(" ","-")}`}>
         <div className="nav-box-text">{cateName}</div>
+        </Link>
         <div className="nav-box-btn-expand" style={isExpand?{transform:"rotate(90deg)"}:{transform:"rotate(0deg)"}}>
           <FontAwesomeIcon icon={faChevronRight} onClick={() => setIsExpand(!isExpand)}/>
         </div>

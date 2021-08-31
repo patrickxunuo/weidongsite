@@ -1,21 +1,14 @@
 import React from 'react'
 import './ProductDetail.css'
 import {productsData} from "../../data";
-import {useLocation} from "react-router-dom";
 import ProductTabs from "../ProductTabs/ProductTabs";
 import ContactUsBox from "../ContactUsBox/ContactUsBox";
 import Feedback from "../../pages/Feedback/Feedback";
 
 
-const ProductDetail = () => {
-  const locations = useLocation()
-  const paths = locations.pathname.split('/')
-  const productId = paths[3]
-  const productCate = paths[2]
+const ProductDetail = ({productId}) => {
 
-
-  const productSelectCate = productsData.filter(product => product.cate.replaceAll(' ', '-').toLowerCase() === productCate)[0]
-  const productSelectItem = productSelectCate.products.filter(product => product.id === productId)[0]
+  const productSelectItem = productsData.find(product => product.id === productId)
 
 
   return (

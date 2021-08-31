@@ -12,7 +12,7 @@ import ProductList from "../../pages/ProductList/ProductList";
 import ProductDetail from "../ProductDetail/ProductDetail";
 
 const PageFrame = () => {
-  const {pathname} = useParams()
+  const {pathname, productCate, productId} = useParams()
   const location = useLocation()
   const locations = location.pathname.split('/')
   const cate = locations[locations.length - 1]
@@ -43,7 +43,7 @@ const PageFrame = () => {
             }
           </div>
           <div className="page-small-title">{pathname.toUpperCase()}</div>
-          {locations.length === 2 &&
+          {!productCate &&
           <>
             {
               pathname === "about-us" &&
@@ -68,20 +68,30 @@ const PageFrame = () => {
           </>
           }
           {
-            locations.length === 3 &&
+            (productCate && !productId) &&
             <>
-              {
-                pathname === "products" &&
-                <ProductList cate={cate}/>
-              }
+              <ProductList cate={productCate}/>
             </>
           }
           {
-            locations.length === 4 &&
-            <>
-              <ProductDetail/>
-            </>
+            productId &&
+              <ProductDetail productId={productId}/>
           }
+          {/*{*/}
+          {/*  locations.length === 3 &&*/}
+          {/*  <>*/}
+          {/*    {*/}
+          {/*      pathname === "products" &&*/}
+          {/*      <ProductList cate={cate}/>*/}
+          {/*    }*/}
+          {/*  </>*/}
+          {/*}*/}
+          {/*{*/}
+          {/*  locations.length === 4 &&*/}
+          {/*  <>*/}
+          {/*    <ProductDetail/>*/}
+          {/*  </>*/}
+          {/*}*/}
         </div>
       </div>
     </div>
