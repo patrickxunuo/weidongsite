@@ -9,8 +9,8 @@ const Products = () => {
   return (
     <div className="product-wrap">
       {
-        productsCateData.map((data,index) =>
-          <Link to="/products/auto-screen-printer" key={index}>
+        productsCateData?.map((data,index) =>
+          <Link to={`/products/${data.name.toLowerCase().replaceAll(" ","-")}`} key={index}>
             <div className="product-item-wrap">
               <img className="product-img" src={data.img} alt=""/>
               <div className="product-title">

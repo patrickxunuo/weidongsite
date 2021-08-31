@@ -11,7 +11,7 @@ const NavBox = () => {
 
   return (
     <div className="nav-box-container">
-      <h4 className="nav-box-text">{pageName.replace("-"," ")}</h4>
+      <h4 className="nav-box-text">{pageName.replace("-"," ").toUpperCase()}</h4>
       <div className="nav-box-line"/>
       <div className="nav-box-list">
         {
@@ -26,7 +26,7 @@ const NavBox = () => {
                 productsCateData.map((cate, index) =>
                   !cate.subCate ?
                     <li key={index}>
-                      <Link to={`/products/${cate.name.toLowerCase().replace(" ","-")}`}>
+                      <Link to={`/products/${cate.name.toLowerCase().replaceAll(" ","-")}`}>
                         <div className="nav-box-text">{cate.name}</div>
                       </Link>
                     </li>
