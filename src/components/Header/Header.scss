@@ -4,6 +4,51 @@
   justify-content: center;
   background: #bd1a1a;
 
+  .header-mobile {
+    display: none;
+    width: 100%;
+    background: white;
+
+    .header-small-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+
+    .header-hamburger-container {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .header-hamburger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 0 10px;
+
+        &::before, &::after {
+          content: '';
+          width: 30px;
+          height: 3px;
+          position: absolute;
+          background: black;
+        }
+
+        &::before {
+          top: 10px;
+        }
+
+        &::after {
+          bottom: 10px;
+        }
+      }
+    }
+  }
+
   .header-content {
     width: 1260px;
     display: flex;
@@ -18,19 +63,57 @@
         flex-direction: row;
         align-items: center;
 
-        li{
+        li {
           position: relative;
           color: white;
           cursor: pointer;
           padding: 30px 10px;
           transition: all 0.5s ease-in-out;
 
-          &:hover{
+          &:hover {
             background: #2981de;
           }
 
-          &:hover > .header-drop-ul{
+          &:hover > .header-drop-ul {
             display: flex !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-container {
+    .header-mobile {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 99;
+    }
+
+    .header-content {
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      top: 0;
+      background: red;
+      width: auto;
+      justify-content: flex-start;
+
+      .header-large-icon {
+        display: none;
+      }
+
+      nav {
+        ul {
+          flex-direction: column;
+          padding: 0;
+
+          li {
+            width: 100%;
+            padding: 10px;
           }
         }
       }

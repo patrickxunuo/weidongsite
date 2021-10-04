@@ -1,5 +1,6 @@
 import React from 'react';
 import {useLocation} from "react-router-dom";
+import './Feedback.css'
 
 const Feedback = () => {
   const {pathname} = useLocation()
@@ -12,7 +13,7 @@ const Feedback = () => {
           <p>If you have any enquiry about quotation or cooperation, please feel free to email us at sales@apm-print.com or use the following enquiry form. Our sales representative will contact you within 24 hours. Thank you for your interest in our products.</p>
         </div>
       }
-      <form action="">
+      <form action="" className="feedback-form">
         <div>
           <label htmlFor="name">Your Name:</label>
           <input type="text" name="name"/>

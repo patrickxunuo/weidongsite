@@ -1,6 +1,7 @@
-footer{
+footer {
   width: 100%;
 }
+
 .footer-top {
   background: #bd1a1a;
   color: white;
@@ -83,9 +84,27 @@ footer{
     }
   }
 
-  .footer-copyright{
+  .footer-copyright {
     font-size: 14px;
-    color:#797777;
+    color: #797777;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-top {
+    display: none;
+  }
+  .footer-bottom {
+    font-size: 10px;
+    &-container {
+
+      ul {
+        padding: 0 10px;
+      }
+      .footer-copyright{
+        font-size: 10px;
+      }
+    }
   }
 }

@@ -11,8 +11,16 @@
 .header-drop-ul:hover {
   display: flex !important;
 }
-.header-drop-ul li {
-  width: 300px;
+.header-drop-ul .header-drop-li {
+  width: 300px !important;
+}
+
+@media only screen and (max-width: 500px) {
+  .header-drop-ul {
+    display: block !important;
+    position: relative;
+    top: 10px;
+  }
 }
 
 /*# sourceMappingURL=HeaderDropDown.css.map */

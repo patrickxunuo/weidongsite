@@ -27,5 +27,25 @@
 .showcase-container .showcase-btn:hover {
   background: #2981de;
 }
+.showcase-container h3, .showcase-container p {
+  color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-showcase {
+    flex-wrap: wrap;
+  }
+
+  .showcase-container {
+    width: 300px;
+    margin: 20px;
+  }
+  .showcase-container .showcase-img-caption {
+    height: auto;
+  }
+  .showcase-container .showcase-img-caption p {
+    margin: 0;
+  }
+}
 
 /*# sourceMappingURL=ShowCase.css.map */

@@ -12,7 +12,15 @@
     display: flex !important;
   }
 
-  li{
-    width: 300px;
+  .header-drop-li{
+    width: 300px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header-drop-ul{
+    display: block !important;
+    position: relative;
+    top: 10px;
   }
 }

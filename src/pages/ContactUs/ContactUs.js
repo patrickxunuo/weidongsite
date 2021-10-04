@@ -1,10 +1,11 @@
 import React from "react";
 import Feedback from "../Feedback/Feedback";
+import './ContactUs.css'
 
 const ContactUs = () => {
 
   return (
-    <div>
+    <div className="contactus-container">
       <div>
       <pre>
           {`Factory:

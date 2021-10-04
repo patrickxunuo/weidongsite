@@ -17,4 +17,10 @@
   background: #2981de;
 }
 
+@media only screen and (max-width: 500px) {
+  .product-tab li {
+    padding: 10px;
+  }
+}
+
 /*# sourceMappingURL=ProductTabs.css.map */

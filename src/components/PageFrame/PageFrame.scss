@@ -71,3 +71,19 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  .page-container {
+    .page-body{
+      width: 100%;
+
+      &-left{
+        display: none;
+      }
+      &-right{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

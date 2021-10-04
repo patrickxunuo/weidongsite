@@ -6,7 +6,7 @@ import {Link, useLocation, useParams} from "react-router-dom";
 import Feedback from "../../pages/Feedback/Feedback";
 import ContactUs from "../../pages/ContactUs/ContactUs";
 import NewsList from "../NewsList/NewsList";
-import AboutUs from "../../pages/AboutUs";
+import AboutUs from "../../pages/AboutUs/AboutUs";
 import Products from "../../pages/Products/Products";
 import ProductList from "../../pages/ProductList/ProductList";
 import ProductDetail from "../ProductDetail/ProductDetail";

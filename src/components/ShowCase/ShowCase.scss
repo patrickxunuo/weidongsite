@@ -26,4 +26,23 @@
       background: #2981de;
     }
   }
+  h3, p{
+    color: black;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-showcase{
+    flex-wrap: wrap;
+  }
+  .showcase-container{
+    width: 300px;
+    margin: 20px;
+    .showcase-img-caption{
+      height: auto;
+      p{
+        margin: 0;
+      }
+    }
+  }
 }

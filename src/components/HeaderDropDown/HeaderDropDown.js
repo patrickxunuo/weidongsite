@@ -8,7 +8,7 @@ const HeaderDropDown = ({dropDown}) => {
     <ul className="header-drop-ul">
       {
         dropDown.map((item, index) =>
-          <li key={index}>
+          <li key={index} className="header-drop-li">
             <Link to={item.to ? item.to : `/products/${item.name.toLowerCase().replaceAll(" ", "-")}`}>
               {item.name}
             </Link>

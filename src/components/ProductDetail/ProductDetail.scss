@@ -1,14 +1,19 @@
-.productdetail-list{
+.productdetail-list {
   list-style: none;
   display: flex;
   flex-direction: row;
 
-  .productdetail-right{
-    &-description{
+  .productdetail-frame{
+    width: 412px;
+    height: 232px;
+  }
+  .productdetail-right {
+    &-description {
       font-size: 14px;
       color: #797777;
     }
-    button{
+
+    button {
       color: white;
       padding: 0;
       transition-duration: 0.4s;
@@ -17,25 +22,59 @@
       width: 150px;
       height: 50px;
       font-size: 20px;
-      &:hover{
+
+      &:hover {
         background-color: #61dafb;
       }
     }
-    .chat-now{
+
+    .chat-now {
       background-color: #e41e26;
     }
-    .send-inquiry{
+
+    .send-inquiry {
       background-color: #2981de;
     }
 
-    ul{
+    ul {
       list-style: none;
       display: flex;
       flex-direction: column;
-      li{
+
+      li {
         padding: 5px;
         width: 300px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .productdetail-container {
+    width: 300px;
+  }
+  .productdetail-list {
+    width: 100%;
+    flex-direction: column;
+    padding: 0;
+
+    .productdetail-img {
+      img {
+        width: 300px;
+        height:300px;
+      }
+    }
+
+    .productdetail-right {
+      ul {
+        padding: 0;
+        li{
+          text-align: center;
+        }
+      }
+    }
+    .productdetail-frame{
+      width: 300px;
     }
   }
 }

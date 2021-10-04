@@ -12,7 +12,7 @@ const ProductDetail = ({productId}) => {
 
 
   return (
-    <div className="productdetail-Container">
+    <div className="productdetail-container">
       <ul className="productdetail-list">
         <li>
           <div className='productdetail-img'>
@@ -50,7 +50,7 @@ const ProductDetail = ({productId}) => {
         </ul>
       </div>
       <div>
-        <iframe width="412" height="232" src="https://www.youtube.com/embed/bHQqvYy5KYo" title="YouTube video player"
+        <iframe className="productdetail-iframe"  src="https://www.youtube.com/embed/bHQqvYy5KYo" title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen/>
