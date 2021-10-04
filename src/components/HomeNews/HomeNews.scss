@@ -1,6 +1,7 @@
 .home-news {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   padding: 20px;
 
@@ -17,7 +18,7 @@
   display: flex;
   margin: 10px;
 
-  div{
+  div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,5 +27,30 @@
   img {
     height: 90px;
     margin-right: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .home-news {
+    .home-news-wrap {
+      width: 100%;
+    }
+    h5{
+      font-size: 16px;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  .home-news-right{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items:center !important;
+
+    p{
+      margin: 0;
+    }
   }
 }

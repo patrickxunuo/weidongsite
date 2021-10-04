@@ -1,6 +1,9 @@
 import React from 'react';
 import './Footer.css'
 import imgs from '../../assets/logoS.png'
+import {Link} from "react-router-dom";
+import HeaderDropDown from "../HeaderDropDown/HeaderDropDown";
+import {productsCateData} from "../../data";
 
 const Footer = () => {
 
@@ -58,7 +61,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <img src={ imgs } alt=""/>
+            <img src={imgs} alt=""/>
           </div>
         </div>
       </div>
@@ -66,12 +69,36 @@ const Footer = () => {
         <div className="footer-bottom-container">
           <div className="footer-bottom-content">
             <ul>
-              <li>About Us</li>
-              <li>Product</li>
-              <li>News</li>
-              <li>Industry Knowledge</li>
-              <li>Contact Us</li>
-              <li>Feedback</li>
+              <li>
+                <Link to="/about-us">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/products">
+                  Product
+                </Link>
+              </li>
+              <li>
+                <Link to="/news">
+                  News
+                </Link>
+              </li>
+              <li>
+                <Link to="/info">
+                  Industry Knowledge
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact-us">
+                  Contact Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/feedback">
+                  Feedback
+                </Link>
+              </li>
               <li>Sitemap</li>
             </ul>
           </div>

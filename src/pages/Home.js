@@ -4,6 +4,7 @@ import {showcaseData} from "../data";
 import HotProduct from "../components/HotProduct/HotProduct";
 import HomeNews from "../components/HomeNews/HomeNews";
 import CarouselWidget from "../components/Carousel/Carousel";
+import {Link} from "react-router-dom";
 
 const Home = () => {
   return (
@@ -12,7 +13,9 @@ const Home = () => {
       <div className="home-showcase">
         {
           showcaseData.map((data,index)=>
-            <ShowCase key={index} data={data}/>
+            <Link to="/about-us" key={index}>
+              <ShowCase  data={data}/>
+            </Link>
           )
         }
       </div>

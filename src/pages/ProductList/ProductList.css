@@ -29,4 +29,21 @@
   cursor: pointer;
 }
 
+@media only screen and (max-width: 500px) {
+  .product-list {
+    width: 300px;
+  }
+
+  .product-item {
+    flex-direction: column;
+  }
+  .product-item .product-des {
+    display: none;
+  }
+
+  .product-right {
+    text-align: center;
+  }
+}
+
 /*# sourceMappingURL=ProductList.css.map */

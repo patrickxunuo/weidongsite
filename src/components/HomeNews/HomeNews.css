@@ -1,6 +1,7 @@
 .home-news {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   padding: 20px;
 }
@@ -24,6 +25,28 @@
 .home-news-container img {
   height: 90px;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  .home-news .home-news-wrap {
+    width: 100%;
+  }
+  .home-news h5 {
+    font-size: 16px;
+  }
+  .home-news p {
+    font-size: 12px;
+  }
+
+  .home-news-right {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .home-news-right p {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=HomeNews.css.map */
